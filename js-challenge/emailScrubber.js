@@ -8,7 +8,7 @@
   var emailKeyExist = pollutedURL.indexOf('email='); // try to see what we testing against
   var checkURL = pollutedURL.match(emailPattern);
   var j;
-  var newChar;
+
   
   // locate the email and position
   function strLocator(URL, emailRegExp) {
@@ -21,13 +21,8 @@
   
   var emailKeyPostion = strLocator(pollutedURL, emailPattern);
   
-  if (emailKeyExist) {
-    newChar = pollutedURL.charAt(emailKeyPostion - 1);
-  }
-  else {
-    newChar = pollutedURL.charAt(emailKeyPostion - 1)
-  }
-  
+  var newChar = pollutedURL.charAt(emailKeyPostion - 1);
+
   var queryString = pollutedURL.split(newChar);
   
   if (checkURL) {
