@@ -23,7 +23,7 @@ body {
   }
   .floating-icon {
     float: right;
-    width: 58px;
+    width: 48px;
     height: 20px;
     margin: 30px 10px;
   }
@@ -275,7 +275,7 @@ h3, .h3 {
   background-color: dodgerblue;
   color: white;
   padding: 11px;
-  width: 200px;
+  width: 80%;
   margin-bottom: 0;
 }
 
@@ -372,39 +372,57 @@ footer {
     /* Safari 6.1+ */
     display: flex;
     flex-direction: row;
-    width: 485px;
+    width: 38%;
     margin-bottom: 10px;
   }
   .leftnav div {
     font-size: small;
     font-weight: 800;
     font-family: Oswald;
-    padding: 0 16px;
+//   padding: 0 6px;
   }
+  
+  $padding-left-nav: 5px;
+  $padding-right-nav: 0;
   /* Safari 6.1+ */
   .leftnav div:nth-of-type(1) {
-    -webkit-flex-grow: 1;
+    -webkit-flex-grow: .2;
+    padding-right: $padding-right-nav;
   }
   .leftnav div:nth-of-type(2) {
-    -webkit-flex-grow: 1;
+    -webkit-flex-grow: .3;
+    padding-left:$padding-left-nav;
+    padding-right: $padding-right-nav;
   }
   .leftnav div:nth-of-type(3) {
-    -webkit-flex-grow: 1;
+    -webkit-flex-grow: .3;
+     padding-left:$padding-left-nav;
+     padding-right: $padding-right-nav;
   }
   .leftnav div:nth-of-type(4) {
-    -webkit-flex-grow: 1;
+    -webkit-flex-grow: .3;
+     padding-left:$padding-left-nav;
+    padding-right: $padding-right-nav;
   }
   .leftnav div:nth-of-type(1) {
-    flex-grow: 1;
+    flex-grow: .2;
+     padding-left:$padding-left-nav;
+     padding-right: $padding-right-nav;
   }
   .leftnav div:nth-of-type(2) {
-    flex-grow: 1;
+    flex-grow: .3;
+     padding-left:$padding-left-nav;
+    padding-right: $padding-right-nav;
   }
   .leftnav div:nth-of-type(3) {
-    flex-grow: 1;
+    flex-grow: .3;
+     padding-left:$padding-left-nav;
+    padding-right: $padding-right-nav;
   }
   .leftnav div:nth-of-type(4) {
-    flex-grow: 1;
+    flex-grow: .3;
+     padding-left:$padding-left-nav;
+     padding-right: $padding-right-nav;
   }
   .rightnav {
     display: -webkit-flex;
@@ -416,6 +434,7 @@ footer {
     font-size: small;
     font-weight: 800;
     font-family: Oswald;
+    width:18%;
   }
   .rightnav span:nth-of-type(1) {
     -webkit-flex-grow: 1;
