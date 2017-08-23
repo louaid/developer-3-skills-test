@@ -1,0 +1,432 @@
+@import "bootstrap";
+body {
+  background-color: dimgray;
+}
+
+.topheader {
+  background-color: white;
+}
+
+.newspapername {
+  font-family: 'Noto Serif', serif;
+}
+
+
+  // nav 
+  .navstate {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-weight: 700;
+    background-color: white !important;
+  }
+  .floating-icon {
+    float: right;
+    width: 58px;
+    height: 20px;
+    margin: 30px 10px;
+  }
+  .navbar {
+    background: white;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    font-family: 'Oswald', sans-serif;
+    .navbar-nav li a {
+      color: black;
+      font-weight: 700;
+      margin-right: 30px;
+      background-color: white;
+      &:hover {
+        color: black;
+        @extend .navstate;
+      }
+      &:focus {
+        color: black;
+        @extend .navstate;
+      }
+      &:active {
+        color: black;
+        @extend .navstate;
+      }
+    }
+  }
+  
+  // right nav with login start here
+  
+  .navbar-right {
+    display: -webkit-flex;
+    display: flex;
+    height: 40px;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+  .sub-now {
+    display: -webkit-flex;
+    display: flex;
+    height: 40px;
+    padding: 4px 7px;
+    background-color: aliceblue;
+    text-align: center;
+    width: 158px;
+    display: block;
+    clear: both;
+    .subscribe {
+      font-family: 'Roboto Condensed', sans-serif;
+      text-align: center;
+      width: 100%;
+      a {
+        color: darkred;
+      }
+      &:hover {
+        color: darkred;
+      }
+    }
+    .cents {
+      font-size: 11px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .subscribe,
+  .cents {
+    float: left;
+    clear: both;
+  }
+  .login {
+    color: black;
+    border-right: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  // right nav with login ends here
+  
+  //main top nav starts here
+  
+  .navbar-nav>li.news:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: blue;
+    top: 50%;
+    margin-top: -2px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  .navbar-nav>li.news:before {
+    right: auto;
+    left: -3px;
+  }
+  .navbar-nav>li.sport:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: orange;
+    top: 50%;
+    margin-top: -2px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  .navbar-nav>li.sport:before {
+    right: auto;
+    left: -3px;
+  }
+  .navbar-nav>li.austin:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: darkred;
+    top: 50%;
+    margin-top: -2px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  .navbar-nav>li.austin:before {
+    right: auto;
+    left: -3px;
+  }
+  .navbar-nav>li.ahora:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: green;
+    top: 50%;
+    margin-top: -2px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  .navbar-nav>li.ahora:before {
+    right: auto;
+    left: -3px;
+  }
+  .navbar-nav>li.neighberhoods:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: purple;
+    top: 50%;
+    margin-top: -2px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  .navbar-nav>li.neighberhoods:before {
+    right: auto;
+    left: -3px;
+  }
+  .navbar-nav>li.thingstodo:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: darkred;
+    top: 50%;
+    margin-top: -2px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  .navbar-nav>li.thingstodo:before {
+    right: auto;
+    left: -3px;
+  }
+  .navbar-nav>li.more:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: red;
+    top: 50%;
+    margin-top: -2px;
+    right: 20px;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  .navbar-nav>li.more:before {
+    right: auto;
+    left: -3px;
+  }
+
+
+// main top nav stops here
+
+// section 
+
+section{
+  img{ margin: 20px 0;}
+  a{
+    color:blue;
+  }
+}
+
+h3, .h3 {
+  font-size: 38px
+}
+
+.fa-facebook:before {
+  margin: 11px;
+}
+
+.fa-twitter:before {
+  margin: 11px;
+}
+
+.fa-share-square-o {
+  margin: 11px;
+}
+
+.a-commenting {
+  margin: 11px;
+}
+
+.date-writer {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+// middle section start here
+.main,
+.subsection {
+  background-color: aliceblue;
+}
+
+.main {
+  .row {
+    padding: 20px 0;
+  }
+}
+
+// left side take a break 
+
+.takeabreak {
+  font-family: 'Oswald', sans-serif;
+  background-color: dodgerblue;
+  color: white;
+  padding: 11px;
+  width: 200px;
+  margin-bottom: 0;
+}
+
+.takebreakItems {
+  background-color: #333333;
+  color: white;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-direction: row-reverse;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 27px;
+  margin-bottom: 20px;
+  a {
+    color: white;
+  }
+  &:hover {
+    color: white;
+  }
+  &:focus {
+    color: white;
+  }&:active{
+    color: white;
+  }
+}
+
+.takebreakItems div {
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+}
+
+.takebreakItems div:last-child {
+  border: none;
+}
+
+
+// seemore buttons
+.rightside,
+.leftside,
+.seemore {
+  h3 {
+    font-family: 'Oswald', sans-serif;
+  }
+}
+.seemore-main {
+  background-color: dodgerblue;
+  font-size: 12px;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  font-weight: 800;
+}
+
+.subsection {
+ 
+  position: relative;
+  .seemore-right {
+    @extend .seemore-main;
+    top: 19px;
+    right: 1px;
+  }
+  .seemore-left {
+    @extend .seemore-main;
+    top: 476px;
+    right: 1px;
+    font-weight: 800;
+  }
+}
+
+
+// list group
+.list-group-item {
+  padding: 33px 22px;
+  font-weight: 700;
+}
+
+.list-group-item:last-child {
+  padding: 26 px;
+  height: 26px !important;
+}
+
+
+
+
+footer {
+  display: block;
+  padding: 10px 0;
+  background-color: white;
+  .leftnav {
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row;
+    width: 485px;
+    margin-bottom: 10px;
+  }
+  .leftnav div {
+    font-size: small;
+    font-weight: 800;
+    font-family: Oswald;
+    padding: 0 16px;
+  }
+  /* Safari 6.1+ */
+  .leftnav div:nth-of-type(1) {
+    -webkit-flex-grow: 1;
+  }
+  .leftnav div:nth-of-type(2) {
+    -webkit-flex-grow: 1;
+  }
+  .leftnav div:nth-of-type(3) {
+    -webkit-flex-grow: 1;
+  }
+  .leftnav div:nth-of-type(4) {
+    -webkit-flex-grow: 1;
+  }
+  .leftnav div:nth-of-type(1) {
+    flex-grow: 1;
+  }
+  .leftnav div:nth-of-type(2) {
+    flex-grow: 1;
+  }
+  .leftnav div:nth-of-type(3) {
+    flex-grow: 1;
+  }
+  .leftnav div:nth-of-type(4) {
+    flex-grow: 1;
+  }
+  .rightnav {
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    font-weight: 800;
+    font-family: Oswald;
+  }
+  .rightnav span:nth-of-type(1) {
+    -webkit-flex-grow: 1;
+  }
+  .rightnav span:nth-of-type(2) {
+    -webkit-flex-grow: 1;
+  }
+  .rightnav span:nth-of-type(1) {
+    flex-grow: 1;
+  }
+  .rightnav span:nth-of-type(2) {
+    flex-grow: 1;
+  }
+}

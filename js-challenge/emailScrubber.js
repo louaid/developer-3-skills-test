@@ -4,7 +4,7 @@
   var pollutedCase3 = 'https://www.google.com/wecantest/moreandmore/somemore';
   // location.href
   var emailPattern = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi;
-  var pollutedURL = pollutedCase1
+  var pollutedURL = pollutedCase1 // test URL
   var emailKeyExist = pollutedURL.indexOf('email='); // try to see what we testing against
   var checkURL = pollutedURL.match(emailPattern);
   var j;
